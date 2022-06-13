@@ -1,0 +1,416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /*border:  2px solid slateblue;*/
+}
+
+:root 
+{
+    --bg: #DA0037;
+    --white: #f4f4f4;
+    --text: #E3A3B3;
+    --gray: #4444;
+}
+
+body 
+{
+    min-height: 100vh;
+    width: 100%;
+    color: #151515;
+}
+
+h1{font-size: 3rem;}
+h2{ font-size: 2rem; }
+h3{font-size: 1.5rem;}
+p{ font-size: 1rem; }
+.btns
+{
+    background-color: var(--bg);
+    display: inline-block;
+    color: var(--text);
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.20rem;
+    letter-spacing: 2px;
+}
+
+
+
+/*MENU */
+nav 
+{
+    background-color: var(--bg) ;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: 0px 5px 4px #0003;
+    z-index: 99;
+   
+
+}
+
+nav a 
+{
+    color: var(--text);
+}
+
+nav .header 
+{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+nav .nav_logo,
+
+{
+    color: var(--white);
+}
+
+
+
+
+nav .nav_logo
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.8rem;
+    color:  var(--white);
+ 
+}
+
+
+nav .icon > div 
+{
+    width: 30px;
+    height: 4px;
+    margin:  5px 0;
+    transition:  ease 0.5s;
+    background-color: var(--white);
+}
+
+.icon.equis  > div:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+transition:  ease 0.5s;
+}
+.icon.equis  > div:nth-child(2){
+    opacity: 0;
+    transition:  ease 0.5s;
+    transform: translateX(100%);
+}
+.icon.equis > div:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+    transition:  ease 0.5s;
+}
+
+
+
+nav .mobile_links 
+{
+   background-color: var(--bg);
+   position: fixed;
+   width: 60%;
+   height: 100vh;
+   right:0;
+   top: 60px;
+   transition: transform ease 0.5s;
+   display:  flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transform: translate(100%,0);
+   z-index: 98;
+
+}
+
+nav .mobile_links.active 
+{
+   transform: translate(0,0);
+   transition: transform ease 1.6s;
+    z-index: 98;
+
+}
+
+nav .mobile_links.active .container-links 
+{
+    transform: translateY(0);
+    transition: ease 1.5s;
+}
+
+nav .container-links 
+{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:  20px;
+    transform:  translateY(-200%);
+    transition: ease 0.5s;
+
+
+}
+
+
+nav .mobile_links  a
+{
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* DESKTOP MENU  */
+
+nav .desktop 
+{
+    display: none;
+}
+
+
+/* SECTION HERO  */
+
+#hero 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(0, 0, 0, 0.825))
+    ,url('assets/heropicture.jpg')
+    ;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-top: 60px;
+
+}
+
+.hero_container 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    gap: 30px;
+}
+
+#hero h1 
+{
+    color: var(--bg);
+    font-weight: 900;
+    width: 90%;
+    letter-spacing: 5px;
+}
+
+#hero p 
+{
+    width: 90%;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+/*#hero  a 
+{
+    background-color: var(--bg);
+    display: inline-block;
+    color: var(--text);
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}*/
+
+
+/* BENEFICIOS  */
+
+#beneficios 
+{
+    background-color: #eaeaea;
+}
+
+#beneficios .beneficios_container 
+{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+}
+
+#beneficios .beneficios_container h2 
+{
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: var(--bg);
+
+}
+
+#beneficios .beneficios_cards
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin:  0 auto;
+}
+
+#beneficios .beneficios_cards .card 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#beneficios .card .card_picture 
+{
+    width: 50%;
+    text-align: center;
+}
+
+#beneficios .card .card_picture ion-icon
+{
+    font-size: 4em;
+    
+}
+
+#beneficios .card .card_text 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#beneficios .card .card_text h3 
+{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#beneficios .card .card_text p 
+{
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* TRABAJOS  */
+
+
+
+#mis-trabajos 
+{
+    background-color: var(--text);
+    padding: 50px 0;
+
+}
+
+#mis-trabajos h2
+{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--bg);
+    font-size: 2.40em;
+}
+
+#mis-trabajos .trabajos-icon 
+{
+    font-size: 2.5em;
+    display:  block;
+    margin: 0 auto;
+    color: var(--white);
+    animation: saltar ease 1s infinite;
+}
+
+@keyframes saltar {
+
+    0%{ transform: translateY(5px) }
+    50%{ transform: translateY(-5px) }
+    100%{ transform: translateY(5px) }
+}
+
+
+
+
+#mis-trabajos .mis-trabajos_container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+
+
+#mis-trabajos .card 
+{
+    width:  300px;
+    height: 350px;
+    position: relative;
+    display: grid;
+    place-items:  center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#mis-trabajos .card img 
+{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#mis-trabajos .mis-trabajos_container
+{
+    display:  flex;
+    flex-direction: column;
+    gap:  50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width:  900px)
+{
+    #mis-trabajos .mis-trabajos_container
+    {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    #mis-trabajos .card 
+{
+    width:  400px;
+    height: 400px
+  
+}
+
+}
+/*TERMINA MEDIAS QUERYS */
