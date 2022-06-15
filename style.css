@@ -1,22 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-family: 'Poppins', sans-serif;
     /*border:  2px solid slateblue;*/
 }
 
 :root 
 {
-    --bg: #DA0037;
-    --white: #f4f4f4;
-    --text: #E3A3B3;
-    --gray: #4444;
+    --bg: #f686bd;
+    --rosa-oscuro:  #78415B;
+    --white: #F5F5F5;
+    --rosa-claro:  #FFC2D5;
+    --gray: #383838;
+    --morado: #827397;
+    --tamaño-fuente:  2.5rem;
+    --fuente: 'Courgette', cursive ;
 }
 
 body 
@@ -32,14 +39,16 @@ h3{font-size: 1.5rem;}
 p{ font-size: 1rem; }
 .btns
 {
-    background-color: var(--bg);
+    /*background-color: var(--bg);*/
+    border:  2px solid var(--white);
     display: inline-block;
-    color: var(--text);
+    color: var(--bg);
     padding: 10px 30px;
     font-weight: bold;
     border-radius: 5px;
     font-size: 1.20rem;
     letter-spacing: 2px;
+    box-shadow: inset 0px 0px 40px 40px var(--white);
 }
 
 
@@ -47,7 +56,7 @@ p{ font-size: 1rem; }
 /*MENU */
 nav 
 {
-    background-color: var(--bg) ;
+    background-color: var(--white) ;
     width: 100%;
     height: 60px;
     position: fixed;
@@ -74,23 +83,17 @@ nav .header
     justify-content: space-between;
 }
 
-nav .nav_logo,
-
-{
-    color: var(--white);
-}
 
 
-
-
-nav .nav_logo
+nav .header_logo
 {
     font-weight: bold;
     text-transform: uppercase;
     font-style: normal;
     font-size: 1.8rem;
-    color:  var(--white);
- 
+    color:  var(--bg);
+    font-family: var(--fuente);
+
 }
 
 
@@ -100,7 +103,7 @@ nav .icon > div
     height: 4px;
     margin:  5px 0;
     transition:  ease 0.5s;
-    background-color: var(--white);
+    background-color: var(--bg);
 }
 
 .icon.equis  > div:nth-child(1){
@@ -121,7 +124,7 @@ transition:  ease 0.5s;
 
 nav .mobile_links 
 {
-   background-color: var(--bg);
+   background-color: var(--white);
    position: fixed;
    width: 60%;
    height: 100vh;
@@ -173,6 +176,7 @@ nav .mobile_links  a
     text-align: center;
     font-weight: 600;
     font-style: italic;
+    color:  var(--bg);
 }
 
 
@@ -194,7 +198,11 @@ nav .desktop
     background-size: cover;
     background-position: center center;
     width: 100%;
+    min-height: 80vh;
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -207,17 +215,18 @@ nav .desktop
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 100px 0;
-    gap: 30px;
+    gap: 2rem;
 }
 
 #hero h1 
 {
     color: var(--bg);
-    font-weight: 900;
-    width: 90%;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    font-size: 2.6rem;
+    font-family: var(--fuente);
+
 }
+
 
 #hero p 
 {
@@ -226,191 +235,230 @@ nav .desktop
     color: var(--white);
 }
 
-/*#hero  a 
-{
-    background-color: var(--bg);
-    display: inline-block;
-    color: var(--text);
-    padding: 10px 30px;
-    font-weight: bold;
-    border-radius: 5px;
-}*/
 
 
 /* BENEFICIOS  */
 
-#beneficios 
+
+.beneficios 
 {
-    background-color: #eaeaea;
+    background: var(--text);
+    text-align: center;
 }
 
-#beneficios .beneficios_container 
+.beneficios_container 
 {
     width: 100%;
-    height: 100%;
-    padding: 100px 0;
+    padding: 3rem 0;
+    display: grid;
+    gap:  5rem;
 }
 
-#beneficios .beneficios_container h2 
+.beneficios_cards 
 {
-    width: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    color: var(--bg);
-
-}
-
-#beneficios .beneficios_cards
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 90%;
-    margin:  0 auto;
-}
-
-#beneficios .beneficios_cards .card 
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-#beneficios .card .card_picture 
-{
-    width: 50%;
-    text-align: center;
-}
-
-#beneficios .card .card_picture ion-icon
-{
-    font-size: 4em;
-    
-}
-
-#beneficios .card .card_text 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    flex-direction: column;
-    text-align: center;
-}
-
-#beneficios .card .card_text h3 
-{
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-}
-
-#beneficios .card .card_text p 
-{
-    font-style: italic;
-    font-weight: 600;
-}
-
-/* TRABAJOS  */
-
-
-
-#mis-trabajos 
-{
-    background-color: var(--text);
     padding: 50px 0;
-
 }
 
-#mis-trabajos h2
-{
-    text-align: center;
-    margin-top: 10px;
+.card{
+  padding: 0 1rem;
+}
+
+.beneficios_container ion-icon{
+    font-size: 3rem;
     color: var(--bg);
-    font-size: 2.40em;
-}
-
-#mis-trabajos .trabajos-icon 
-{
-    font-size: 2.5em;
-    display:  block;
     margin: 0 auto;
-    color: var(--white);
     animation: saltar ease 1s infinite;
 }
 
-@keyframes saltar {
-
-    0%{ transform: translateY(5px) }
-    50%{ transform: translateY(-5px) }
-    100%{ transform: translateY(5px) }
+/*numeros iconos */
+.fa-solid {
+  font-size: 5rem;
 }
 
+@keyframes saltar{
+    0%{ transform: translateY(5px); }
+    50%{ transform: translateY(-5px); }
+    100%{ transform: translateY(5px); }
+}
 
-
-
-#mis-trabajos .mis-trabajos_container 
+.beneficios_img
 {
+   
+    width: 100px;
+    height: 100px;
+}
+
+.beneficios_title span 
+{
+    color: var(--bg);
+     font-family: var(--fuente);
+
+}
+
+.beneficios h2 
+{
+    letter-spacing: 1px;
+     font-family: var(--fuente);
+    font-size: var(--tamaño-fuente);
+    color:  var(--gray);
+
+
+}
+
+.beneficios h3 
+{
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+    color:  var(--gray);
+}
+
+.beneficios  p 
+{
+    color:  var(--rosa-oscuro);
+    width: 250px;
+    margin:  0 auto;
+    font-size: 1.4rem;
+}
+
+/*ABOUT */
+
+.about 
+{
+    text-align: center;
+    background-color: var(--rosa-claro);
+    color:  var(--rosa-oscuro);
+}
+
+.about__container 
+{
+    padding: 50px 1rem;
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    padding: 100px 0;
-    margin: 0 auto;
-}
-
-
-
-#mis-trabajos .card 
-{
-    width:  300px;
-    height: 350px;
-    position: relative;
-    display: grid;
-    place-items:  center;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-#mis-trabajos .card img 
-{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-#mis-trabajos .mis-trabajos_container
-{
-    display:  flex;
     flex-direction: column;
-    gap:  50px;
+    justify-content: center;
+    align-items: center;
+    gap:  3rem;
+}
+
+.about__image{
+    background-image: url('assets/perfilandy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about__card{
+    width: 90%;
+    display:  grid;
+    grid-template-rows: repeat(2, 200px);
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px -5px #0005;
+}
+
+
+.about__texts{
+    place-self: center;
+    padding: 0 1rem;
+
+}
+.about__title,
+.about__logo{
+  /*color: #827397;*/
+  color:  var(--gray);
+}
+
+.about__title{
+    font-size: var(--tamaño-fuente);
+    letter-spacing: 4px;
+    font-family: var(--fuente);
+}
+
+.about__logo{
+    font-size: 2.5rem;
+}
+
+
+
+
+.about__title--2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.about__paragraph{
+    line-height: 1.7rem;
+    color: var(--gray);
+}
+
+/*MIS TRABAJOS */
+
+.work {
+    background-color: var(--fuente);
+}
+
+.work__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.work__title{
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: var(--tamaño-fuente);
+}
+
+.work__title,
+.work__logo{
+     color: var(--gray);
+}
+
+.work__images{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, 400px);
+    gap: 1.4rem;
+}
+
+.work__image{
+    background-image: url('assets/img-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.work__image-2{
+    background-image: url('assets/img-2.jpg');
+}
+
+.work__image-3{
+    background-image: url('assets/img-3.jpg');
+}
+
+.work__image-4{
+    background-image: url('assets/img-4.jpg');
 }
 
 
 
-@media screen and (min-width:  900px)
-{
-    #mis-trabajos .mis-trabajos_container
-    {
-        flex-direction: row;
-        width: 90%;
-    }
 
-    #mis-trabajos .card 
-{
-    width:  400px;
-    height: 400px
+.work__logo{
+   font-size: 2rem;
+   animation: fade ease 2.5s infinite alternate;
   
 }
 
+/*ANIMACION PARA EL LOGO WORK */
+@keyframes fade{
+    0%{ opacity: 0 }
+    50%{opacity: 0.5}
+    100%{opacity: 1}
 }
-/*TERMINA MEDIAS QUERYS */

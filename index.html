@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 <nav>
    <div class="header">
-    <i class="nav_logo"><span>Butterfly</span></i>
+    <span class="header_logo">Butterfly</span>
     <div class="icon">
       <div></div>
       <div></div>
@@ -38,10 +38,7 @@
         <a href="#">Sobre</a>
      </div>
 
-     <div class="desktop_icon">
-        <ion-icon name="person-circle-outline"></ion-icon>
-        <ion-icon name="chatbox-outline"></ion-icon>
-     </div>
+     
    </div>
 </nav>
 
@@ -51,78 +48,111 @@
         <div class="hero_container">
             <h1>ALISADOS BUTTERFLY</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eaque?</p>
-            <a href="#" class="btns">SABER MÁS</a>
+            <a href="#about" class="btns">SABER MÁS</a>
         </div>
     </section>
 
     <!-- SECCION BENEFICIOS  -->
 
-    <section id="beneficios">
-        <div class="beneficios_container">
-          
-            <h2>¿Porqué hacerte un Alisado?</h2>
-          
-            <div class="beneficios_cards">
-                <div class="card">
-                    <div class="card_picture">
-                      <ion-icon name="sparkles"></ion-icon>
-                    </div>
+   <section class="beneficios">
+     <div class="beneficios_container">
 
-                    <div class="card_text">
-                      <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
+          <div class="beneficios_title">
+            <h2>BENEFICIOS DE HACERTE UN 
+              <span>ALISADO</span>
+            </h2>
+           <ion-icon name="arrow-down-circle"></ion-icon>
+          </div>
+          <!-- card 1 -->
+         <div class="card">
+          
+             <i class="fa-solid fa-1" style="color: #827397;"></i>
+             <h3>Efecto liso</h3>
+             <p>Lucir un cabello lasio entre 3 a 6 meses.</p>
+         
+         </div>
+         <!-- card 2 -->
+         <div class="card">
+          
+             <i class="fa-solid fa-2" class="beneficios__img" style="color: #827397;"></i>
+
+           <h3>Fortaleza</h3>
+             <p>Tu pelo estará cada vez más fuerte.</p>
+         </div>
+         <!-- card 3 -->
+         <div class="card">
+          
+            <i class="fa-solid fa-3"  style="color: #827397;"></i>
+
+          <h3>Natural</h3>
+             <p>Repara y nutre el cabello de forma natural.</p>
+         </div>
+
+
+
+         
+       </div>
+     </div>
+   </section>
+
+    <!-- SECTION sobremi -->
+
+    <section class="about" id="about">
+      <div class="about__container">
+
+       <div class="about__header">
+            <h2 class="about__title" >Sobre Mí
+           </h2>
+           <ion-icon name="person-circle" class="about__logo"></ion-icon>
+         
+       </div>
+       <article class="about__card">
+
+
+        <div class="about__image"></div>
+
+        <div class="about__texts">
+            <h3 class="about__title--2">ANDY RINQUE</h3>
+            <p class="about__paragraph">
+                Vivo en San Miguel, Buenos Aires, Argentina. y tengo 29 años.
+                Actualmente estoy certificada en Alisados y Nutrición.
+            </p>
+       </div>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- MIS TRABAJOS  -->
+
+    <section class="work">
+        <div class="work__container">
+
+          <div class="work__texts">
+               <h2 class="work__title">Algunos de mis Trabajos</h2>
+           <ion-icon name="images" class="work__logo"></ion-icon>
+          </div>
+
+           <div class="work__images">
+
+                <div class="work__image">
                 </div>
-                <!-- segunda card  -->
-                <div class="card">
-                  <div class="card_picture">
-                    <ion-icon name="sparkles"></ion-icon>
-                  </div>
 
-                  <div class="card_text">
-                    <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                  </div>
-              </div>
-                <!-- tercera card -->
-                <div class="card">
-                  <div class="card_picture">
-                    <ion-icon name="sparkles"></ion-icon>
-                  </div>
+                <div class="work__image work__image-2"></div>
 
-                  <div class="card_text">
-                    <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                  </div>
-              </div>
-            </div>
+                <div class="work__image work__image-3"></div>
+
+                <div class="work__image work__image-4"></div>
+                
+           </div>
+
         </div>
     </section>
 
-    <!-- SECTION WORK  -->
-    <section id="mis-trabajos">
-      <h2>MIS TRABAJOS </h2>
-      <ion-icon name="arrow-down-circle" class="trabajos-icon"></ion-icon>
 
-       <div class="mis-trabajos_container">
-          
-          <div class="card">
-            <img src="assets/img-1.jpg" alt="">
-          </div>
 
-          <div class="card">
-            <img src="assets/img-2.jpg" alt="">
-          </div>  
 
-          <div class="card">
-            <img src="assets/img-3.jpg" alt="">
-          </div>  
-
-          <div class="card">
-            <img src="assets/img-4.jpg" alt="">
-          </div>              
-       </div>
-    </section>
 </main>
 
 
@@ -132,7 +162,6 @@
 
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script src="menu.js"></script>
 
