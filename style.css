@@ -83,39 +83,42 @@ nav{
     background: var(--white);
     position: relative;
     z-index: 98;
-    transition:  ease-in-out 0.4s;
+    transition:  ease 0.5s;
 }
 
 /******* ANIMACION ICONO JS ******/
 
 
 
-.equis .line--1{
+.nav__icon.active .line--1{
     transform: rotate(45deg) translateY(13px);
-    transition: transform ease-in-out 0.4s;
+    transition: transform ease 0.5s;
     
 }
-.equis .line--2{
+.nav__icon.active .line--2{
     opacity: 0;
-    transition: opacity ease-in-out 0.4s;
+    transition: opacity ease 0.5s;
 }
- .equis .line--3{
+ .nav__icon.active .line--3{
     transform: rotate(-45deg) translateY(-13px);
-    transition: transform ease-in-out 0.4s;
+    transition: transform ease 0.5s;
 }
 
-
+.nav__menu.active{
+    transition:  transform ease .5s;
+    transform: translateX(0%);
+}
 
 .nav__menu{
     background: var(--bg);
     position: fixed;
     top: 60px;
     right: 0;
+    transform: translateX(400%);
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    transform: translateX(200%);
-    transition: transform ease 0.4s;
+    transition:  ease .5s;
 }
 
 .nav__menu a{
@@ -603,21 +606,8 @@ a.precios__cta{
 
 
 
-/*MEDIAS QUERYS */
+/*********MEDIAS QUERYS ***********/
 
-:root 
-{
-    --bg: #f686bd;
-    --rosa-oscuro:  #78415B;
-    --white: #F5F5F5;
-    --rosa-claro:  #FFC2D5;
-    --gray: #383838;
-    --color-texto: #02020a;
-    --morado: #827397;
-    --tamaño-fuente:  2.5rem;
-    --tamaño-icons:  2.4rem;
-    --fuente: 'Courgette', cursive ;
-}
 
 @media (min-width: 400px){
   .beneficios h2{
