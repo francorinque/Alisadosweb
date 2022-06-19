@@ -1,11 +1,11 @@
-const show = document.querySelector('.icon');
-const link = document.querySelector('.mobile_links');
+const showmenu = document.querySelector('.nav__icon');
+const links = document.querySelector('.nav__menu');
 
 
 
 
-show.addEventListener('click', () =>{
-    link.classList.toggle('active');
-    show.classList.toggle('equis');
+showmenu.addEventListener('click', () =>{
+    links.classList.toggle('active');
+    showmenu.classList.toggle('equis');
 
 })

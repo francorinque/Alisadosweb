@@ -1,159 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Document</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaquerys.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<title>Document</title>
 </head>
 <body>
-    
+		
 
 <nav>
-   <div class="header">
-    <span class="header_logo">Butterfly</span>
-    <div class="icon">
-      <div></div>
-      <div></div>
-      <div></div>
+	 <span class="nav__logo">Butterfly</span>
+
+    <div class="nav__icon equis">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+      <div class="line line--3"></div>
     </div>
-   </div>
 
-   <div class="mobile_links">
-    <div class="container-links">
-      <a href="#">Redes</a>
-    <a href="#">Mis Trabajos</a>
-    <a href="#">Productos</a>
-    <a href="#">Sobre</a>
+    <div class="nav__menu  active">
+      <a href="#about">SOBRE MÍ</a>
+      <a href="#work">TRABAJOS</a>
+      <a href="#precios">PRECIOS</a>
+      <a href="#contact" class="cta-active">CONTACT</a>
     </div>
-   </div>
-
-   <div class="desktop">
-     <div class="desktop_links">
-        <a href="#">Redes</a>
-        <a href="#">Mis Trabajos</a>
-        <a href="#">Productos</a>
-        <a href="#">Sobre</a>
-     </div>
-
-     
-   </div>
 </nav>
 
 
 <main>
-    <section id="hero">
-        <div class="hero_container">
-            <h1>ALISADOS BUTTERFLY</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eaque?</p>
-            <a href="#about" class="btns">SABER MÁS</a>
-        </div>
-    </section>
+		<header id="hero">
+				<div class="hero_container">
+						<h1>ALISADOS BUTTERFLY</h1>
+						<p>Cuidá tu pelo, y deja de maltratarlo. ¿Qué estás esperando para hacerte un a alisado?</p>
+						<a href="#beneficios" class="btns">SABER MÁS</a>
+				</div>
+		</header>
 
-    <!-- SECCION BENEFICIOS  -->
+		<!-- SECCION BENEFICIOS  -->
 
-   <section class="beneficios">
-     <div class="beneficios_container">
+	 <section class="beneficios" id="beneficios">
+		 <div class="beneficios_container">
 
-          <div class="beneficios_title">
-            <h2>BENEFICIOS DE HACERTE UN 
-              <span>ALISADO</span>
-            </h2>
-           <ion-icon name="arrow-down-circle"></ion-icon>
-          </div>
-          <!-- card 1 -->
-         <div class="card">
-          
-             <i class="fa-solid fa-1" style="color: #827397;"></i>
-             <h3>Efecto liso</h3>
-             <p>Lucir un cabello lasio entre 3 a 6 meses.</p>
-         
-         </div>
-         <!-- card 2 -->
-         <div class="card">
-          
-             <i class="fa-solid fa-2" class="beneficios__img" style="color: #827397;"></i>
+					<div class="beneficios_title">
+						<h2>BENEFICIOS DE HACERTE UN 
+							<span>ALISADO</span>
+						</h2>
+            <i class="fa-solid fa-arrow-down"></i>
+					</div>
+					
+					<!-- card 1 -->
+				<div class="container-cards">
+						 <div class="card">
+					
+						 <i class="fa-solid fa-1" style="color: #F5F5F5;"></i>
+						 <h3>LISO</h3>
+						 <p>Lucir un cabello lasio entre 3 a 6 meses.</p>
+				 
+				 </div>
+				 <!-- card 2 -->
+				 <div class="card">
+					
+						 <i class="fa-solid fa-2" class="beneficios__img" style="color: #F5F5F5;"></i>
 
-           <h3>Fortaleza</h3>
-             <p>Tu pelo estará cada vez más fuerte.</p>
-         </div>
-         <!-- card 3 -->
-         <div class="card">
-          
-            <i class="fa-solid fa-3"  style="color: #827397;"></i>
+					 <h3>CUIDADO</h3>
+						 <p>Cuidas tu cabello (evitas usar planchita constantemente y no lo expones 
+							al exceso del calor)</p>
+				 </div>
+				 <!-- card 3 -->
+				 <div class="card">
+					
+						<i class="fa-solid fa-3"  style="color: #F5F5F5;"></i>
 
-          <h3>Natural</h3>
-             <p>Repara y nutre el cabello de forma natural.</p>
-         </div>
-
-
-
-         
-       </div>
-     </div>
-   </section>
-
-    <!-- SECTION sobremi -->
-
-    <section class="about" id="about">
-      <div class="about__container">
-
-       <div class="about__header">
-            <h2 class="about__title" >Sobre Mí
-           </h2>
-           <ion-icon name="person-circle" class="about__logo"></ion-icon>
-         
-       </div>
-       <article class="about__card">
+					<h3>TIEMPO</h3>
+						 <p>Ahorras tiempo (ya que no necesitas planchar el cabello, solo secar 
+							con secador después de cada lavado)</p>
+				 </div>
 
 
-        <div class="about__image"></div>
+				</div>
 
-        <div class="about__texts">
-            <h3 class="about__title--2">ANDY RINQUE</h3>
-            <p class="about__paragraph">
-                Vivo en San Miguel, Buenos Aires, Argentina. y tengo 29 años.
-                Actualmente estoy certificada en Alisados y Nutrición.
-            </p>
-       </div>
-        </article>
-      </div>
-    </section>
+				 
+			 </div>
+		 </div>
+	 </section>
+
+		<!-- SECTION sobremi -->
+
+		<section class="about" id="about">
+			<div class="about__container">
+
+			 <div class="about__header">
+					<h2 class="about__title" >Sobre Mí
+					 </h2>
+			</div>
+					
+				 
+			 <article class="about__card">
+
+
+				<div class="about__image"></div>
+
+				<div class="about__texts">
+						<h3 class="about__title--2">ANDY RINQUE</h3>
+						<p class="about__paragraph">
+								Vivo en San Miguel, Buenos Aires, Argentina. y tengo 29 años.
+								Actualmente estoy certificada en Alisados y Nutrición.
+						</p>
+			 </div>
+				</article>
+			</div>
+		</section>
 
 
 
-    <!-- MIS TRABAJOS  -->
+		<!-- MIS TRABAJOS  -->
 
-    <section class="work">
-        <div class="work__container">
+		<section class="work" id="work">
+				<div class="work__container">
 
-          <div class="work__texts">
-               <h2 class="work__title">Algunos de mis Trabajos</h2>
-           <ion-icon name="images" class="work__logo"></ion-icon>
-          </div>
+					<div class="work__texts">
+							 <h2 class="work__title">Algunos de mis Trabajos</h2>
+					</div>
 
-           <div class="work__images">
+					 <div class="work__images">
 
-                <div class="work__image">
-                </div>
+								<div class="work__image">
+									<img src="assets/img-1.jpg">
+								</div>
 
-                <div class="work__image work__image-2"></div>
+								<div class="work__image work__image-2">
+										<img src="assets/img-2.jpg">
+								</div>
 
-                <div class="work__image work__image-3"></div>
+								<div class="work__image work__image-3">
+										<img src="assets/img-3.jpg">
+								</div>
 
-                <div class="work__image work__image-4"></div>
-                
-           </div>
+								<div class="work__image work__image-4">
+										<img src="assets/img-4.jpg">.-
+								</div>
+								
+					 </div>
 
-        </div>
-    </section>
+				</div>
+		</section>
+
+
+		<section class="precios" id="precios">
+			<div class="precios__container">
+
+				<h2>PRECIOS $</h2>
+
+				<div class="contenedor__precios">
+					
+				<div class="precios__alisados card">
+					<h3 class="alisados__title">ALISADOS</h3>
+					<div class="precios__lista">
+						<div>	<p>Cabello Corto:</p>  <span>$1100/$1200</span></div>
+						<div><p>Cabello Medio:</p> <span> $1300/$1400</span></div>
+					  <div><p>Cabello Largo:</p>  <span>$1500/$1600</span></div>
+						<div><p>Cabello Extra Largo:</p>  <span>$1500/$1600</span></div>
+						
+					</div>
+          <a href="https://wa.me/1128590388?text=Consultá%20sobre%20productos%20y%20turnos" class="precios__cta btns" target="_blank">MÁS INFO</a>
+				</div>
+
+				<div class="precios__nutricion card">
+					<h3 class="nutricion__title">REPARACIÓN CAPILAR </h3>
+					<div class="precios__lista">
+						<div><p>Cabello Corto:</p> <span> $1000/$1100</span></div>
+						<div><p>Cabello Medio:</p>  <span>$1200/$1300</span></div>
+						<div><p>Cabello Largo:</p>  <span>$1400/$1500</span></div>
+					  <div><p>	Cabello Extra Largo:</p>  <span>$1600/$1700</span></div>
+						
+					</div>
+          <a href="https://wa.me/1128590388?text=Consultá%20sobre%20productos%20y%20turnos" class="precios__cta btns" target="_blank">MÁS INFO</a>
+				</div>
+			</div>
+				</div>
+		</section>
 
 
 
 
 </main>
+
+<footer class="footer" id="contact">
+  <div class="footer__container">
+
+  	<div class="footer__bubles">
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+  		<span class="buble"></span>
+
+  	</div>
+
+    <h2 class="footer__title">CONTACT</h2>
+
+    <div class="footer__social">
+     <span class="circle"> <a href="https://www.facebook.com/andrea.alisados.39" class="fa-brands fa-facebook footer__media" target="_blank"></a></span>
+      
+     <span class="circle" ><a href="https://instagram.com/alisadosbutterfly?igshid=YmMyMTA2m2Y=" class="fa-brands fa-instagram footer__media" target="_blank"></a></span>
+
+     <span class="circle"><a href="https://wa.me/1128590388?text=Consultá%20sobre%20productos%20y%20turnos" class="fa-brands fa-whatsapp footer__media" target="_blank"></a></span>
+    </div>
+
+    <div class="footer__social-franco">
+      <span class="footer__title">&copy; CREATED BY: RINQUE FRANCO</span>
+      
+      <div class="franco__media">
+        <span class="circle"> <a href="#" class="fa-brands fa-twitter footer__media"></a></span>
+
+        <span class="circle"> <a href="#" class="fa-brands fa-github footer__media"></a></span>
+
+         <span class="circle"> <a href="#" class="fa-brands fa-linkedin footer__media"></a></span>
+      </div>
+    </div>
+
+   
+      
+    
+  </div>
+</footer>
 
 
 
