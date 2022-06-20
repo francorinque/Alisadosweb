@@ -72,6 +72,7 @@ nav{
 .nav__logo {
     font-size: 1.5rem;
     color: var(--white);
+    font-family: var(--fuente);
 }
 
 
@@ -83,7 +84,7 @@ nav{
     background: var(--white);
     position: relative;
     z-index: 98;
-    transition:  ease 0.5s;
+    transition:  ease 0.7s;
 }
 
 /******* ANIMACION ICONO JS ******/
@@ -92,20 +93,21 @@ nav{
 
 .nav__icon.active .line--1{
     transform: rotate(45deg) translateY(13px);
-    transition: transform ease 0.5s;
+    transition: transform ease 0.7s;
     
 }
 .nav__icon.active .line--2{
     opacity: 0;
-    transition: opacity ease 0.5s;
+    transform: translateX(50px);
+    transition: opacity ease .7s;
 }
  .nav__icon.active .line--3{
     transform: rotate(-45deg) translateY(-13px);
-    transition: transform ease 0.5s;
+    transition: transform ease 0.7s;
 }
 
 .nav__menu.active{
-    transition:  transform ease .5s;
+    transition:  transform ease .7s;
     transform: translateX(0%);
 }
 
@@ -118,7 +120,7 @@ nav{
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    transition:  ease .5s;
+    transition:  ease .7s;
 }
 
 .nav__menu a{
@@ -131,7 +133,7 @@ nav{
 /******** ANIMACION JS  **********/
 .nav__menu.active{
     transform: translateX(0%);
-    transition: transform ease 0.4s;
+    transition: transform ease 0.7s;
 }
 
 
@@ -308,12 +310,17 @@ nav{
     overflow: hidden;
     border-radius: 5px;
     align-self: center;
+    padding-bottom: 20px;
     box-shadow: 1px 1px 20px -5px #0005;
 }
 
 
 .about__texts{
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .about__title,
@@ -341,7 +348,7 @@ nav{
 
 
 .about__title--2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 3px;
 }
 
@@ -405,17 +412,9 @@ nav{
 
 
 .work__logo{
-   font-size: var(--tamaño-fuente);
-   animation: fade ease 2.5s infinite alternate;
-  
+   font-size: var(--tamaño-fuente);  
 }
 
-/*ANIMACION PARA EL LOGO WORK */
-@keyframes fade{
-    0%{ opacity: 0 }
-    50%{opacity: 0.5}
-    100%{opacity: 1}
-}
 
 /*TABLAS PRECIOS*/
 
@@ -456,6 +455,10 @@ a.precios__cta{
     padding: 4px 20px;
     box-shadow: inset 2px 2px 4px #0003;
     color: var(--bg);
+}
+
+.precios h2{
+    font-size: var(--tamaño-fuente);
 }
 
 .precios h3{
