@@ -749,7 +749,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 40px 40px;
     position: fixed;
     width: 100%;
     left:0;
@@ -792,14 +792,14 @@ nav{
 
 .nav__menu a{
       font-size: 1.2rem;
+      display:  block;
 }
 
 
 .cta-active{
     background-color: var(--color-texto);
-    display: inline-block;
     border-radius: 40px;
-    width: 120px;
+    width: 160px;
 }
 
 
