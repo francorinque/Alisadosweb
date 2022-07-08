@@ -12,36 +12,41 @@
 <body>
 		
 
-<nav>
-	 <span class="nav__logo">Butterfly</span>
 
-    <div class="nav__icon">
-      <div class="line line--1"></div>
-      <div class="line line--2"></div>
-      <div class="line line--3"></div>
-    </div>
+ <header class="header">
+  <nav class="container nav">
+    <span class="nav__logo">Butterfly</span>
+ 
+     <div class="nav__icon">
+       <div class="line line--1"></div>
+       <div class="line line--2"></div>
+       <div class="line line--3"></div>
+     </div>
+ 
+     <div class="nav__menu">
+       <a href="#hero" class="nav__link">INICIO</a>
+       <a href="#about" class="nav__link">SOBRE MÍ</a>
+       <a href="#work" class="nav__link">TRABAJOS</a>
+       <a href="#precios" class="nav__link">PRECIOS</a>
+       <a href="#contact" class="nav__link btns btns--nav">CONTACT</a>
+     </div>
+ </nav>
+ </header>
 
-    <div class="nav__menu">
-      <a href="#about" class="nav__link">SOBRE MÍ</a>
-      <a href="#work" class="nav__link">TRABAJOS</a>
-      <a href="#precios" class="nav__link">PRECIOS</a>
-      <a href="#contact" class="cta-active nav__link ">CONTACT</a>
-    </div>
-</nav>
 
 
 <main>
-		<header id="hero">
+		<header id="hero" class="container">
 				<div class="hero_container">
 						<h1>ALISADOS BUTTERFLY</h1>
-						<p>Cuidá tu pelo, y deja de maltratarlo.¿Qué estás esperando para hacerte un Alisado?</p>
-						<a href="#beneficios" class="btns">SABER MÁS</a>
+						<p class="section-p section-p--hero">Cuidá tu pelo, y deja de maltratarlo.¿Qué estás esperando para hacerte un Alisado?</p>
+						<a href="#beneficios" class="btns btns--hero">SABER MÁS</a>
 				</div>
 		</header>
 
 		<!-- SECCION BENEFICIOS  -->
 
-	 <section class="beneficios" id="beneficios">
+	 <section class="beneficios container" id="beneficios">
 		 <div class="beneficios_container">
 
 					<div class="beneficios_title">
@@ -55,27 +60,27 @@
 				<div class="container-cards">
 						 <div class="card">
 					
-						 <i class="fa-solid fa-1" style="color: #F5F5F5;"></i>
+						 <i class="fa-solid fa-1" style="color: #ff70ab;"></i>
 						 <h3>LISO</h3>
-						 <p>Lucir un cabello lasio entre 3 a 6 meses.</p>
+						 <p class="section-p">Lucir un cabello lasio entre 3 a 6 meses.</p>
 				 
 				 </div>
 				 <!-- card 2 -->
 				 <div class="card">
 					
-						 <i class="fa-solid fa-2" class="beneficios__img" style="color: #F5F5F5;"></i>
+						 <i class="fa-solid fa-2" class="beneficios__img" style="color: #ff70ab;"></i>
 
 					 <h3>CUIDADO</h3>
-						 <p>Cuidas tu cabello (evitas usar planchita constantemente y no lo expones 
+						 <p class="section-p">Cuidas tu cabello (evitas usar planchita constantemente y no lo expones 
 							al exceso del calor)</p>
 				 </div>
 				 <!-- card 3 -->
 				 <div class="card">
 					
-						<i class="fa-solid fa-3"  style="color: #F5F5F5;"></i>
+						<i class="fa-solid fa-3"  style="color: #ff70ab;"></i>
 
 					<h3>TIEMPO</h3>
-						 <p>Ahorras tiempo (ya que no necesitas planchar el cabello, solo secar 
+						 <p class="section-p">Ahorras tiempo (ya que no necesitas planchar el cabello, solo secar 
 							con secador después de cada lavado)</p>
 				 </div>
 
@@ -89,36 +94,35 @@
 
 		<!-- SECTION sobremi -->
 
-		<section class="about" id="about">
+		<section class="about container" id="about">
 			<div class="about__container">
 
 			 <div class="about__header">
-					<h2 class="about__title" >Sobre Mí
-					 </h2>
+					<h2 class="about__title" >Sobre Mí</h2>
 			</div>
 					
 				 
 			 <article class="about__card">
+         <div class="about__image"></div>
+ 
+         <div class="about__texts">
+             <h3 class="about__title--2">Andrea Rinque</h3>
+             <p class="about__paragraph section-p">
+                 Vivo en San Miguel, Buenos Aires, Argentina. y tengo 29 años.
+                 Actualmente estoy certificada en Alisados y Nutrición.
+             </p>
+        </div>
+      </article>
+    </div>
+  </section>
 
 
-				<div class="about__image"></div>
-
-				<div class="about__texts">
-						<h3 class="about__title--2">Andrea Rinque</h3>
-						<p class="about__paragraph">
-								Vivo en San Miguel, Buenos Aires, Argentina. y tengo 29 años.
-								Actualmente estoy certificada en Alisados y Nutrición.
-						</p>
-			 </div>
-				</article>
-			</div>
-		</section>
 
 
 
 		<!-- MIS TRABAJOS  -->
 
-		<section class="work" id="work">
+		<section class="work container" id="work">
 				<div class="work__container">
 
 					<div class="work__texts">
@@ -149,38 +153,64 @@
 		</section>
 
 
-		<section class="precios" id="precios">
-			<div class="precios__container">
+		<section class="precios container" id="precios">
+      <h2 class="precios__title">PRECIOS $</h2>
 
-				<h2>PRECIOS $</h2>
+      <div class="precios__cards">
+        <article class="precios__card">
+           <h3 class="card__title">Alisados</h3>
 
-				<div class="contenedor__precios">
-					
-				<div class="precios__alisados card">
-					<h3 class="alisados__title">ALISADOS</h3>
-					<div class="precios__lista">
-						<div>	<p>Cabello Corto:</p>  <span>$1100/$1200</span></div>
-						<div><p>Cabello Medio:</p> <span> $1300/$1400</span></div>
-					  <div><p>Cabello Largo:</p>  <span>$1500/$1600</span></div>
-						<div><p>Cabello Extra Largo:</p>  <span>$1500/$1600</span></div>
-						
-					</div>
-          <a href="https://wa.me/1128590388?text=Consultá%20sobre%20productos%20y%20turnos" class="precios__cta btns" target="_blank">MÁS INFO</a>
-				</div>
+           <div class="card__textos">
+            <p class="textos__paragraph">Cabello Corto</p>
+            <p class="textos__paragraph">$1200-$1300</p>
+           </div>
 
-				<div class="precios__nutricion card">
-					<h3 class="nutricion__title">REPARACIÓN CAPILAR </h3>
-					<div class="precios__lista">
-						<div><p>Cabello Corto:</p> <span> $1000/$1100</span></div>
-						<div><p>Cabello Medio:</p>  <span>$1200/$1300</span></div>
-						<div><p>Cabello Largo:</p>  <span>$1400/$1500</span></div>
-					  <div><p>	Cabello Extra Largo:</p>  <span>$1600/$1700</span></div>
-						
-					</div>
-          <a href="https://wa.me/message/B3ONIVERMUFAM1" class="precios__cta btns" target="_blank">MÁS INFO</a>
-				</div>
-			</div>
-				</div>
+           <div class="card__textos">
+            <p class="textos__paragraph">Cabello Mediano</p>
+            <p class="textos__paragraph">$1400-$1500</p>
+           </div>
+
+           <div class="card__textos">
+            <p class="textos__paragraph">Cabello Largo</p>
+            <p class="textos__paragraph">$1600-$1700</p>
+           </div>
+
+           <div class="card__textos">
+            <p class="textos__paragraph">Cabello Extra Largo</p>
+            <p class="textos__paragraph">$1800-$1900</p>
+           </div>
+           <!-- boton  -->
+           <a href="#" class="btns btns__precios--btn">Turno</a>
+
+        </article>
+        <!-- 2DA CARD  -->
+
+        <article class="precios__card">
+          <h3 class="card__title">Recuperación Capilar</h3>
+
+          <div class="card__textos">
+           <p class="textos__paragraph">Cabello Corto</p>
+           <p class="textos__paragraph">$1100-$1200</p>
+          </div>
+
+          <div class="card__textos">
+           <p class="textos__paragraph">Cabello Mediano</p>
+           <p class="textos__paragraph">$1300-$1400</p>
+          </div>
+
+          <div class="card__textos">
+           <p class="textos__paragraph">Cabello Largo</p>
+           <p class="textos__paragraph">$1500-$1600</p>
+          </div>
+
+          <div class="card__textos">
+           <p class="textos__paragraph">Cabello Extra Largo</p>
+           <p class="textos__paragraph">$1700-$1800</p>
+          </div>
+          <!-- boton  -->
+          <a href="#" class="btns btns__precios--btn">Turno</a>
+       </article>
+      </div>
 		</section>
 
 
@@ -188,45 +218,51 @@
 
 </main>
 
-<footer class="footer" id="contact">
+
+
+
+<footer class="footer container" id="contact">
   <div class="footer__container">
-
-  	<div class="footer__bubles">
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-  		<span class="buble"></span>
-
-  	</div>
-
-    <h2 class="footer__title">CONTACT</h2>
-
-    <div class="footer__social">
-     <span class="circle"> <a href="https://www.facebook.com/andrea.alisados.39" class="fa-brands fa-facebook footer__media" target="_blank"></a></span>
+    
+    <div class="footer__social-container">
       
-     <span class="circle" ><a href="https://instagram.com/alisadosbutterfly?igshid=YmMyMTA2m2Y=" class="fa-brands fa-instagram footer__media" target="_blank"></a></span>
-
-     <span class="circle"><a href="https://wa.me/message/B3ONIVERMUFAM1" class="fa-brands fa-whatsapp footer__media" target="_blank"></a></span>
+      <div class="footer__social">
+        <h2 class="footer__title">CONTACT</h2>
+        <div class="social__andy">
+          <a class="footer__links" href="https://www.facebook.com/andrea.alisados.39"  target="_blank">
+            <i class="fa-brands fa-facebook-square"></i>
+          </a>
+       
+          <a class="footer__links" href="https://instagram.com/alisadosbutterfly?igshid=YmMyMTA2m2Y=" target="_blank">
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
+ 
+           <a class="footer__links" href="https://wa.me/message/B3ONIVERMUFAM1"  target="_blank">
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </a>
+        </div>
+     </div>
+ 
+     <div class="footer__social-franco">
+       <span class="footer__title">&copy; RINQUE FRANCO</span>
+       
+       <div class="franco__media">
+          <a class="footer__links" href="
+          https://twitter.com/AgustinfrWeb?t=e0wZOMB_V_0UQ2gsugyNqQ&s=095:34 p. m. 9/6/2022"   target="_blank">
+          <i class="fa-brands fa-twitter-square"></i>
+          </a>
+ 
+          <a class="footer__links" href="https://github.com/francorinque" target="_blank">
+            <i class="fa-brands fa-github-square"></i>
+          </a>
+ 
+          <a class="footer__links" href="https://www.linkedin.com/in/franco-agustin-rinque"  target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+       </div>
+     </div>
+ 
     </div>
-
-    <div class="footer__social-franco">
-      <span class="footer__title">&copy; CREATED BY: RINQUE FRANCO</span>
-      
-      <div class="franco__media">
-        <span class="circle"> <a href="
-         https://twitter.com/AgustinfrWeb?t=e0wZOMB_V_0UQ2gsugyNqQ&s=095:34 p. m. 9/6/2022" class="fa-brands fa-twitter footer__media"  target="_blank"></a></span>
-
-        <span class="circle"> <a href="https://github.com/francorinque" class="fa-brands fa-github footer__media" target="_blank"></a></span>
-
-         <span class="circle"> <a href="https://www.linkedin.com/in/franco-agustin-rinque" class="fa-brands fa-linkedin footer__media" target="_blank"></a></span>
-      </div>
-    </div>
-
    
       
     
